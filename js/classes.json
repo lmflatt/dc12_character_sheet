@@ -1,0 +1,258 @@
+{
+    "none": {
+        "name": "none",
+        "attributes": [
+            {
+                "icon": "hp",
+                "desc": "Hit Points",
+                "value": 0
+            },
+            {
+                "icon": "ac",
+                "desc": "Armor Class",
+                "value": 0
+            },
+            {
+                "icon": "speed",
+                "desc": "Speed",
+                "value": 0
+            }
+        ],
+        "skill": "",
+        "desc": "Choose a class to learn about them, or skip this selection if you do not intend to run a combat game. You can still generate a roleplaying character with just a name, picture, and some skill proficiencies!",
+        "attacks": [],
+        "shortRestIcon": "",
+        "shortRestAbility": "",
+        "longRestIcon": "",
+        "longRestAbility": "",
+        "red": 200,
+        "blue": 200,
+        "green": 200
+    },
+    "archer": {
+        "name": "Archer",
+        "attributes": [
+            {
+                "icon": "hp",
+                "desc": "Hit Points",
+                "value": 8
+            },
+            {
+                "icon": "ac",
+                "desc": "Armor Class",
+                "value": 6
+            },
+            {
+                "icon": "speed",
+                "desc": "Speed",
+                "value": 5
+            }
+        ],
+        "skill": "sneaky",
+        "desc": "You can attack from far away with a bow or up close with a sword or dagger. You can be quiet and hard to find like a hunter.",
+        "attacks": [
+            {
+                "icon": "bow",
+                "value": "+1",
+                "desc": "Shoot your bow."
+            },
+            {
+                "icon": "sword",
+                "value": "+1",
+                "desc": "Swing your weapon."
+            }
+        ],
+        "shortRestIcon": "bullseye",
+        "shortRestAbility": "Aim your bow really well and add +5 to an attack roll.",
+        "longRestIcon": "wolf",
+        "longRestAbility": "Call an animal to fight with you for 1 minute.",
+        "red": 154,
+        "blue": 205,
+        "green": 50
+    },
+    "barbarian": {
+        "name": "Barbarian",
+        "attributes": [
+            {
+                "icon": "hp",
+                "desc": "Hit Points",
+                "value": 11
+            },
+            {
+                "icon": "ac",
+                "desc": "Armor Class",
+                "value": 5
+            },
+            {
+                "icon": "speed",
+                "desc": "Speed",
+                "value": 5
+            }
+        ],
+        "skill": "strong",
+        "desc": "You are the strongest warrior with a big sword, axe, or hammer. You are the first to run into battle to scare your enemies.",
+        "attacks": [
+            {
+                "icon": "sword",
+                "value": "+1",
+                "desc": "Swing your weapon."
+            }
+        ],
+        "shortRestIcon": "doubleswords",
+        "shortRestAbility": "Make an extra attack on your turn.",
+        "longRestIcon": "elements",
+        "longRestAbility": "Charge your weapon with Fire, Ice, or Lightning. It deals +1 extra damage for 1 minute.",
+        "red": 255,
+        "blue": 99,
+        "green": 71
+    },
+    "cleric": {
+        "name": "Cleric",
+        "attributes": [
+            {
+                "icon": "hp",
+                "desc": "Hit Points",
+                "value": 7
+            },
+            {
+                "icon": "ac",
+                "desc": "Armor Class",
+                "value": 6
+            },
+            {
+                "icon": "speed",
+                "desc": "Speed",
+                "value": 5
+            }
+        ],
+        "skill": "friendly",
+        "desc": "Your faith lets you call down light from heaven to strike the wicked. Your kindness heals your friends in battle and all those in need.",
+        "attacks": [
+            {
+                "icon": "blast",
+                "value": "+1",
+                "desc": "Summon a Holy Blast."
+            }
+        ],
+        "shortRestIcon": "sun",
+        "shortRestAbility": "Heal someone's injuries, returning 3 lost hit points.",
+        "longRestIcon": "ankh",
+        "longRestAbility": "Bless yourself and your friends for 1 minute. Everyone can add +2 to all rolls.",
+        "red": 238,
+        "blue": 232,
+        "green": 170
+    },
+    "druid": {
+        "name": "Druid",
+        "attributes": [
+            {
+                "icon": "hp",
+                "desc": "Hit Points",
+                "value": 7
+            },
+            {
+                "icon": "ac",
+                "desc": "Armor Class",
+                "value": 5
+            },
+            {
+                "icon": "speed",
+                "desc": "Speed",
+                "value": 5
+            }
+        ],
+        "skill": "tricky",
+        "desc": "You live in a magical forest and are friends with the plants and animals. You can use nature magic to grab enemies with vines or call an animal to attack.",
+        "attacks": [
+            {
+                "icon": "thorns",
+                "value": "+1",
+                "desc": "Summon Thorny Vines"
+            },
+            {
+                "icon": "bird",
+                "value": "+1",
+                "desc": "Call an Animal to Attack."
+            }
+        ],
+        "shortRestIcon": "vines",
+        "shortRestAbility": "Trap an enemy when you Summon Thorny vines on them. They can't move on their next turn, and they take 1 damage if they try to attack.",
+        "longRestIcon": "wolf",
+        "longRestAbility": "Turn into a fierce animal and attack with your claws for 1 minute. Claw attacks deal +1 extra damage.",
+        "red": 102,
+        "blue": 205,
+        "green": 170
+    },
+    "knight": {
+        "name": "Knight",
+        "attributes": [
+            {
+                "icon": "hp",
+                "desc": "Hit Points",
+                "value": 10
+            },
+            {
+                "icon": "ac",
+                "desc": "Armor Class",
+                "value": 7
+            },
+            {
+                "icon": "speed",
+                "desc": "Speed",
+                "value": 5
+            }
+        ],
+        "skill": "alert",
+        "desc": "You bravely protect others with your sword and shield. Enemies can't hurt your friends if they can't get past you.",
+        "attacks": [
+            {
+                "icon": "sword",
+                "value": "+1",
+                "desc": "Swing your weapon."
+            }
+        ],
+        "shortRestIcon": "shield",
+        "shortRestAbility": "When you or a friend next to you gets attacked, you can use your shield to block all of the damage.",
+        "longRestIcon": "doubleswords",
+        "longRestAbility": "For 1 minute, you can add an extra +2 to your attacks rolls.",
+        "red": 135,
+        "blue": 206,
+        "green": 235
+    },
+    "wizard": {
+        "name": "Wizard",
+        "attributes": [
+            {
+                "icon": "hp",
+                "desc": "Hit Points",
+                "value": 6
+            },
+            {
+                "icon": "ac",
+                "desc": "Armor Class",
+                "value": 5
+            },
+            {
+                "icon": "speed",
+                "desc": "Speed",
+                "value": 5
+            }
+        ],
+        "skill": "clever",
+        "desc": "You have studied every book about magic. You can throw fire, ice, lightning, and clever magic tricks at your enemies.",
+        "attacks": [
+            {
+                "icon": "elements",
+                "value": "+1",
+                "desc": "Shoot Fire, Ice, or Lightning."
+            }
+        ],
+        "shortRestIcon": "snail",
+        "shortRestAbility": "Turn one enemy into a snail for 1 hour. They turn back if they take damage or if you turn someone else into a snail.",
+        "longRestIcon": "blast",
+        "longRestAbility": "Your attack blasts a big area on the map with Fire, Ice, or Lightning. Everyone in the area takes the attack damage and +1 extra damage.",
+        "red": 200,
+        "blue": 200,
+        "green": 230
+    }
+}

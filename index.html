@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
+    <title>DC12 Character Sheet</title>
+    <meta property="og:site_name" content="DC12 Character Sheet Generator">
+    <meta property="og:title" content="Welcome to Lee's DC12 Character Sheet Generator">
+    <meta property="og:description" content="Quickly create and print character sheets for any type of DC12 game!">
+    <meta property="og:image" content="headshot.jpg">
+    <meta property="og:url" content="http://dc12charsheet.surge.sh">
+    <meta property="description" content="Quickly create and print character sheets for any type of DC12 game!">
+    <link rel="shortcut icon" href="icons/d20.png">
+
+    <!-- CSS  -->
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    
+</head>
+
+
+<body>
+    <div class="container">
+        <h1>DC12 Character Sheet Generator</h1>
+        
+        <!-- Character Name -->
+        <label class="bigLabel" for="characterName">Character Name:</label>
+        <input type="text" id="characterNameInput" placeholder="Enter name">
+        <br /><br /><br />
+
+        <!-- Character Portrait Upload -->
+        <label class="bigLabel" for="imageInput">Upload Character Portrait:</label>
+        <input type="file" id="imageInput" accept="image/*">
+        <div id="imageFrame"></div>
+        <br /><br />
+
+        <!-- Class Selection -->
+        <label class="bigLabel" for="dropdown">Select Class:</label>
+        <select id="dropdown">
+            <option value="none">-Choose Class-</option>
+            <option value="archer">Archer</option>
+            <option value="barbarian">Barbarian</option>
+            <option value="cleric">Cleric</option>
+            <option value="druid">Druid</option>
+            <option value="knight">Knight</option>
+            <option value="wizard">Wizard</option>
+            <option value="custom">Create Your Own!</option>
+        </select>
+
+        <div id="classDescription"></div>
+        <hr />
+        <br />
+
+        <!-- Skill Proficiency Selection -->
+        <p class="bigLabel">Skills:</p>
+        <legend>You can be proficient with up to 3 skills. Each of the standard classes will automatically lock in 1 skill selection.</legend>
+        <fieldset id="skillsContainer">
+            <label><input type="checkbox" value="alert"> Alert</label>
+            <label><input type="checkbox" value="clever"> Clever</label>
+            <label><input type="checkbox" value="friendly"> Friendly</label>
+            <label><input type="checkbox" value="sneaky"> Sneaky</label>
+            <label><input type="checkbox" value="strong"> Strong</label>
+            <label><input type="checkbox" value="tricky"> Tricky</label>
+        </fieldset>
+
+        <button id="savePdf">Save as PDF</button>
+
+
+        <h2>Preview:</h2>
+        <div id="previewContainer"></div>
+    </div>
+
+    <div id="customClassModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Create Custom Class</h2>
+            
+            <label for="customClassName">Class Name:</label>
+            <input type="text" id="customClassName" required>
+            
+            <label for="hp">HP:</label>
+            <input type="number" id="hp" required>
+            
+            <label for="ac">AC:</label>
+            <input type="number" id="ac" required>
+            
+            <label for="speed">Speed:</label>
+            <input type="number" id="speed" value="5" required>
+            
+            <h3>Attacks (1 req, max 2)</h3>
+            <div class="attack-container">
+                <div class="attack">
+                    <select class="attack-icon">
+                        <option disabled hidden selected value="default"> -- select -- </option>
+                    </select>
+                    <img class="icon-preview" src="icons/default.jpg" alt="icon preview">
+                    <input type="text" class="attack-desc" placeholder="Swing your weapon." required>
+                </div>
+                <div class="attack">
+                    <select class="attack-icon">
+                        <option disabled hidden selected value="default"> -- select -- </option>
+                    </select>
+                    <img class="icon-preview" src="icons/default.jpg" alt="icon preview">
+                    <input type="text" class="attack-desc" placeholder="Swing your weapon.">
+                </div>
+            </div>
+            
+            <h3>Short Rest Ability</h3>
+            <div class="ability">
+                <select id="shortRestIcon">
+                    <option disabled hidden selected value="default"> -- select -- </option>
+                </select>
+                <img class="icon-preview" src="icons/default.jpg" alt="icon preview">
+                <input type="text" id="shortRestDesc" placeholder="Short rest ability description." size="80" required>
+            </div>
+            
+            <h3>Long Rest Ability</h3>
+            <div class="ability">
+                <select id="longRestIcon">
+                    <option disabled hidden selected value="default"> -- select -- </option>
+                </select>
+                <img class="icon-preview" src="icons/default.jpg" alt="icon preview">
+                <input type="text" id="longRestDesc" placeholder="Long rest ability description." size="80" required>
+            </div>
+            
+            <button id="submitCustomClass">Submit</button>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+    <script src="js/main.js"></script>
+
+
+</body>
+
+</html>

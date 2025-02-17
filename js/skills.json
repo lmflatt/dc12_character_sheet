@@ -1,0 +1,26 @@
+[
+    {
+        "name": "Alert",
+        "desc": "Helps you see through disguises, lies, and hiding spots."
+    },
+    {
+        "name": "Clever",
+        "desc": "Helps you solve mysteries, find clues, or remember old knowledge."
+    },
+    {
+        "name": "Friendly",
+        "desc": "Helps you make friends with people so that they tell the truth and offer help."
+    },
+    {
+        "name": "Sneaky",
+        "desc": "Helps you hide and move quietly without being seen."
+    },
+    {
+        "name": "Strong",
+        "desc": "Helps you jump, climb, balance, and lift or move heavy things."
+    },
+    {
+        "name": "Tricky",
+        "desc": "Helps you trick people with disguises, impressions, and made up stories."
+    }
+]
