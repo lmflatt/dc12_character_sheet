@@ -548,7 +548,7 @@ function drawIcons(doc, iconData, yPosition) {
             if (data.icon === "hp") {
                 let rectangleSize = 16;
                 doc.rect(xCoord, currentY - 12, rectangleSize, rectangleSize);
-                text = "/" + text;
+                text = " / " + text;
                 xCoord += rectangleSize + 1;
             }
 
