@@ -23,6 +23,10 @@
 <body>
     <div class="container">
         <h1>DC12 Character Sheet Generator</h1>
+        <p id="intro">A homebrew module for the beginner-friendly TTRPG system, DC12. This offers an accessible first step into classic TTRPG elements, such as class identity, skill modifiers, and character sheets. Take only a minute to build your character with easy-to-grasp skills and classes. Select "Custom Class" to make your own, or play with no class selected for a non-combat game! Beginner Dungeon Masters, get the most fun out of your games with this <a href="files/DM_Tips.pdf" target="_blank">Helpful Guide to running DC 12</a> with the additions from these character sheets!</p>
+
+        <div id="disclaimer">Disclaimer: This is a fan-made project by a passionate DM Dad unaffiliated with the creators of DC20 and DC12.</div>
+        <br />
         
         <!-- Character Name -->
         <label class="bigLabel" for="characterName">Character Name:</label>
@@ -64,10 +68,14 @@
             <label><input type="checkbox" value="tricky"> Tricky</label>
         </fieldset>
 
+        <br />
+        <hr />
+
+        <h3>Save your Character Sheet as a PDF:</h3>
         <button id="savePdf">Save as PDF</button>
 
 
-        <h2>Preview:</h2>
+        <h3>Preview:</h3>
         <div id="previewContainer"></div>
     </div>
 
