@@ -8,8 +8,8 @@ let selectedSkills = [];
 let characterName = "";
 const pageWidth = 215.9; // Letter page width in mm
 const iconSize = 26.46; // 100px converted to mm
-const shortRestRuleText = 'This ability maybe used 2 times. To regain your uses, your DM may decide you need a short rest, a snack, or just an end to the current combat.';
-const longRestRuleText = 'This ability maybe used once. You need a long rest to regain it.';
+const shortRestRuleText = 'This ability may be used 2 times. To regain your uses, your DM may decide you need a short rest, a snack, or just an end to the current combat.';
+const longRestRuleText = 'This ability may be used once. You need a long rest to regain it.';
 
 const modal = document.getElementById("customClassModal");
 
